@@ -1,7 +1,8 @@
-// Firebase Console > 프로젝트 설정 > 내 앱 > 웹 앱 구성에서 값을 복사하세요.
+
 window.STORY_FIREBASE_CONFIG = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  appId: ""
+  apiKey: "AIzaSyBGtn8Fe-OvvNS9-fGh7W1KXPxueKKo1Xw",
+  authDomain: "story-studio-90e77.firebaseapp.com",
+  projectId: "story-studio-90e77",
+  appId: "1:629709006851:web:fe94e03ad0134443845c636"
 };
+  
