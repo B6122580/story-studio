@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function admin() { return request.auth != null && request.auth.token.email_verified == true && request.auth.token.email in ['REPLACE_WITH_YOUR_EMAIL@example.com']; }
+    match /games/{gameId} {
+      allow get: if resource.data.published == true || admin();
+      allow list: if admin();
+      allow create, update, delete: if admin();
+    }
+  }
+}
